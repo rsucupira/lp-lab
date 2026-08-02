@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{DESCRICAO}}">
+  <title>{{SERVICO}} | {{NOME}}</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">{{NOME}}</a>
+      <a class="button button-small" href="#contato">Entrar em contato</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">{{SERVICO}}</p>
+          <h1>{{TITULO}}</h1>
+          <p class="hero-text">{{SUBTITULO}}</p>
+          <div class="actions">
+            <a class="button" href="https://wa.me/{{WHATSAPP}}?text={{MENSAGEM_WHATSAPP}}" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+            <a class="button button-secondary" href="#como-funciona">Como funciona</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumo do serviço">
+          <strong>Atendimento direto</strong>
+          <p>Explique sua necessidade e receba uma orientação inicial sobre a melhor forma de avançar.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <p class="eyebrow">Por que escolher</p>
+        <h2>Uma solução clara para uma necessidade real</h2>
+        <div class="cards">
+          <article class="card"><h3>{{BENEFICIO_1}}</h3><p>{{TEXTO_BENEFICIO_1}}</p></article>
+          <article class="card"><h3>{{BENEFICIO_2}}</h3><p>{{TEXTO_BENEFICIO_2}}</p></article>
+          <article class="card"><h3>{{BENEFICIO_3}}</h3><p>{{TEXTO_BENEFICIO_3}}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="como-funciona">
+      <div class="container narrow">
+        <p class="eyebrow">Como funciona</p>
+        <h2>Do primeiro contato ao próximo passo</h2>
+        <ol class="steps">
+          <li><strong>Conte sua necessidade.</strong><span>Envie uma mensagem com o contexto principal.</span></li>
+          <li><strong>Alinhamos a solução.</strong><span>Definimos objetivo, formato e expectativas.</span></li>
+          <li><strong>Começamos o trabalho.</strong><span>Você recebe uma orientação clara sobre os próximos passos.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>{{CTA_TITULO}}</h2>
+          <p>{{CTA_TEXTO}}</p>
+        </div>
+        <a class="button" href="https://wa.me/{{WHATSAPP}}?text={{MENSAGEM_WHATSAPP}}" target="_blank" rel="noopener">Conversar agora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>© <span id="year"></span> {{NOME}}</span>
+      <span>{{CIDADE}}</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/{{WHATSAPP}}?text={{MENSAGEM_WHATSAPP}}" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">WhatsApp</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

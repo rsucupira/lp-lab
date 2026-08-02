@@ -1,0 +1,46 @@
+name: Nova landing page
+description: Registrar briefing e andamento de uma nova LP
+title: "[LP] "
+labels: ["nova-lp"]
+body:
+  - type: input
+    id: projeto
+    attributes:
+      label: Nome do projeto
+      placeholder: Ex. Ana Nutrição
+    validations:
+      required: true
+  - type: input
+    id: repositorio
+    attributes:
+      label: Nome previsto do repositório
+      placeholder: lp-ana-nutricao
+    validations:
+      required: true
+  - type: textarea
+    id: oferta
+    attributes:
+      label: Serviço e objetivo da página
+      placeholder: Explique o que será oferecido e qual ação o visitante deve realizar.
+    validations:
+      required: true
+  - type: textarea
+    id: publico
+    attributes:
+      label: Público e contexto
+      placeholder: Quem deve chegar à página e de onde virá o tráfego?
+  - type: input
+    id: contato
+    attributes:
+      label: Canal principal de contato
+      placeholder: WhatsApp, Tally, e-mail ou agendamento
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status inicial
+      options:
+        - Aguardando conteúdo
+        - Briefing recebido
+        - Em desenvolvimento
+    validations:
+      required: true
