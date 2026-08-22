@@ -1,0 +1,38 @@
+/* UEBEY Flux V1.1 — treatment layer */
+.flux-app[data-treatment="outline"] .flux-title {
+  color: transparent;
+  -webkit-text-stroke: clamp(1px, .012em, 3px) var(--fg);
+}
+
+.flux-app[data-treatment="layered"] .flux-title {
+  text-shadow: .045em .035em 0 var(--accent), .09em .07em 0 var(--accent-2);
+}
+
+.flux-app[data-treatment="boxed"] .flux-title-wrap {
+  width: fit-content;
+  max-width: 100%;
+  border: var(--stroke) solid var(--fg);
+  border-radius: var(--radius);
+  padding: clamp(.55rem, 1.5vw, 1.35rem);
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+}
+
+.flux-app[data-treatment="soft"] .flux-title {
+  opacity: .88;
+  text-shadow: 0 0 .32em color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+.flux-app[data-treatment="slash"] .flux-title {
+  text-decoration-line: line-through;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: .075em;
+}
+
+.flux-app[data-treatment="inverse"] .flux-title {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: .04em .12em .12em .06em;
+  background: var(--fg);
+  color: var(--bg);
+}
