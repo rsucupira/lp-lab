@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="UEBEY Flux — experiência generativa para serviços digitais.">
+  <title>UEBEY Flux — serviços digitais</title>
+  <link rel="stylesheet" href="./flux.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <main id="flux-app" class="flux-app" aria-live="polite">
+    <div id="flux-canvas" class="flux-canvas" aria-hidden="true"></div>
+
+    <header class="flux-header">
+      <a class="flux-brand" href="./" aria-label="UEBEY Flux">
+        <span>UEBEY</span>
+        <small>serviços digitais</small>
+      </a>
+      <div class="flux-meta" aria-label="Identificação da interface">
+        <span id="flux-id">interface —</span>
+        <span id="flux-novelty">novidade —</span>
+      </div>
+    </header>
+
+    <section id="flux-hero" class="flux-hero" aria-labelledby="flux-title">
+      <div class="flux-kicker" id="flux-kicker">uma presença digital que nunca chega igual</div>
+      <div class="flux-title-wrap" id="flux-title-wrap">
+        <h1 id="flux-title" class="flux-title" aria-label="UEBEY">UEBEY</h1>
+        <p id="flux-subtitle" class="flux-subtitle">serviços digitais</p>
+      </div>
+      <p id="flux-services" class="flux-services">sites · design · conteúdo · vídeo</p>
+      <p id="flux-statement" class="flux-statement">A identidade permanece. A interface se reinventa.</p>
+    </section>
+
+    <nav class="flux-actions" aria-label="Ações da experiência">
+      <button id="flux-next" class="flux-primary" type="button">Outra UEBEY ↻</button>
+      <a id="flux-permalink" class="flux-secondary" href="?seed=">Fixar esta versão</a>
+      <a class="flux-secondary" href="https://uebey.com/sites">Ver serviços</a>
+    </nav>
+
+    <section class="flux-proof" aria-label="Como funciona">
+      <p><strong>Não é uma biblioteca de temas.</strong> Cada carregamento calcula uma nova composição e rejeita candidatos parecidos com o que você já viu.</p>
+      <dl>
+        <div><dt>seed</dt><dd>128 bits</dd></div>
+        <div><dt>candidatos</dt><dd>48 / rodada</dd></div>
+        <div><dt>memória</dt><dd>60 experiências</dd></div>
+        <div><dt>seleção</dt><dd>máxima distância</dd></div>
+      </dl>
+    </section>
+
+    <noscript><p class="flux-noscript">Esta experiência precisa de JavaScript para gerar composições inéditas.</p></noscript>
+  </main>
+
+  <script src="./flux.js" defer></script>
+</body>
+</html>
