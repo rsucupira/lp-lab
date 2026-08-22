@@ -7,6 +7,7 @@
   <meta name="description" content="UEBEY Flux — experiência generativa para serviços digitais.">
   <title>UEBEY Flux — serviços digitais</title>
   <link rel="stylesheet" href="./flux.css">
+  <link rel="stylesheet" href="./flux-hardening.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -41,12 +42,12 @@
     </nav>
 
     <section class="flux-proof" aria-label="Como funciona">
-      <p><strong>Não é uma biblioteca de temas.</strong> Cada carregamento calcula uma nova composição e rejeita candidatos parecidos com o que você já viu.</p>
+      <p><strong>Não é uma biblioteca de temas.</strong> Cada carregamento calcula uma nova composição, compara com o histórico e rejeita assinaturas visuais que você já viu.</p>
       <dl>
         <div><dt>seed</dt><dd>128 bits</dd></div>
         <div><dt>candidatos</dt><dd>48 / rodada</dd></div>
-        <div><dt>memória</dt><dd>60 experiências</dd></div>
-        <div><dt>seleção</dt><dd>máxima distância</dd></div>
+        <div><dt>memória perceptual</dt><dd>60 experiências</dd></div>
+        <div><dt>anti-repetição</dt><dd>4.000 assinaturas</dd></div>
       </dl>
     </section>
 
@@ -54,5 +55,6 @@
   </main>
 
   <script src="./flux.js" defer></script>
+  <script src="./flux-hardening.js" defer></script>
 </body>
 </html>
